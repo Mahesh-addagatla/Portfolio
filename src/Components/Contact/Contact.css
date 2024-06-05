@@ -1,0 +1,149 @@
+/* In your CSS or SCSS file */
+@import '~@fortawesome/fontawesome-free/css/all.css';
+.portfolio-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.contact-title{
+    position: relative;
+}
+.contact-title h1{
+    padding: 0px 30px;
+    font-size: 70px;
+    font-weight: 600;
+}
+.contact-section{
+    display: flex;
+    gap: 150px;
+}
+.contact-left{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+}
+.contact-left h1{
+    font-size: 2rem;
+    font-weight: 700;
+    background: linear-gradient(270deg,#df8908 80%,#b415ff 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.contact-left p{
+    max-width: 550px;
+    color: #d8d8d8;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.contact-details{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #d8d8d8;
+    font-size: 1.2rem;
+}
+.contact-detail{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contact-social{
+    display: flex;
+    flex-direction: row;
+    gap:0 50px;
+    font-size: 25px;
+}
+.contact-social .contact-detail-social a{
+    text-decoration: none;
+    color: #ffff;
+}
+.contact-right{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+}
+.contact-right label{
+    color: #d8d8d8;
+    font-size: 22px;
+    font-weight: 500;
+}
+.contact-right input{
+    border: none;
+    width: 30rem;
+    height: 3rem;
+    padding-left: 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-size: 16px;
+    font-family: poppins;
+}
+.contact-right textarea{
+    width: 25rem;
+    border: none;
+    border-radius: 4px;
+    padding: 25px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-family: poppins;
+    font-size: 16px;
+}
+.contact-right .contact-submit{
+    border: none;
+    color: white;
+    background: linear-gradient(264deg,#df8908 -5.09%,#b415ff 106.28%);
+    border-radius: 50px;
+    font-size: 16px;
+    padding: 14px 60px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.contact-submit:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+@media(max-width:768px){
+    .portfolio-contact{
+        gap: 50px;
+        margin: 50px 70px;
+        align-items: start;
+    }
+    .portfolio-contact h1{
+        padding: 0;
+        font-size: 50px;
+        font-weight: 600;
+    }
+    .contact-section{
+        flex-direction: column;
+    }
+    .contact-left h1{
+        font-size: 54px;
+    }
+    .contact-left p{
+        font-size: 18px;
+    }
+    .contact-detail{
+        gap: 20px;
+    }
+    .contact-right label{
+        font-size: 20px;
+    }
+    .contact-right input{
+        width: 100%;
+        font-size: 20px;
+    }
+    .contact-right textarea{
+        width:95%;
+        font-size: 20px;
+    }
+    .contact-submit{
+        font-size: 15px 40px;
+        padding: 15px 40px;
+    }
+}

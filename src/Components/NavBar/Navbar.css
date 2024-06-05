@@ -1,0 +1,91 @@
+.portfolio-nav-menu li.active {
+    background:linear-gradient(267deg,#da7c25 0.36%,#b923e1 102.06%); 
+    padding: 13px 30px;
+    font-weight: 600;
+    border-radius: 50px;
+    transition: 0.3s;
+  }
+  .portfolio-nav-menu li{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+.anchor-link{
+    text-decoration: none;
+    color: white;
+}
+.Portfolio-image{
+    height: 80px;
+    width:80px;
+}
+.Portfolio-Navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:20px 170px;
+}
+.portfolio-nav-menu{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 60px;
+    font-size: 20px;
+}
+.portfolio-nav-connect{
+    padding: 15px 35px;
+    background: linear-gradient(267deg,#da7c25 0.36%,#b923e1 102.06%);
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+.portfolio-nav-connect:hover{
+    transform: scale(1.05);
+}
+.Portfolio-Navbar .nav-mob-open{
+    display: none;
+}
+.Portfolio-Navbar .portfolio-nav-menu .nav-mob-close{
+    display: none;
+}
+@media(max-width:768px){
+    .Portfolio-Navbar{
+        margin: 20px 50px;
+    }
+    .portfolio-nav-connect{
+        display: none;
+    }
+    .nav-mob-open{
+        display: block;
+        position: fixed;
+        right: 30px;
+        font-size: 25px;
+    }
+    .nav-mob-close{
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 290px;
+        right: 30px;
+        width: 30px;
+        font-size: 30px;
+        text-align: center;
+        z-index: 4;
+        color: white;
+    }
+    .portfolio-nav-menu{
+        position: fixed;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+        padding-top: 40px;
+        gap: 30px;
+        background-color: #1f0016;
+        width: 350px;
+        height: 100vh;
+        z-index: 2;
+        transition: right 0.3s;
+        right: -350px;
+    }
+}
